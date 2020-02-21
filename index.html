@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cnvs</title>
+</head>
+<body>
+  <div id="playground">
+    <div class="cnvs-placeholder cnvs-placeholder-1" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-2" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-3" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-4" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-5" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-6" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-7" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-8" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-9" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-10" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-11" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-12" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-13" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-14" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-15" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-16" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-17" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-18" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-19" data-img="cnvs.jpg"></div>
+    <div class="cnvs-placeholder cnvs-placeholder-20" data-img="cnvs.jpg"></div>
+  </div>
+
+  <canvas id="cnvs"></canvas>
+  
+  <script type="module" src="index.js"></script>
+
+  <style>
+    html, body {
+      width:  100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 2;
+    }
+
+    #playground {
+      position: relative;
+      z-index: 1;
+      width: calc(9000px + 100vw);
+    }
+
+    .cnvs-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 300px;
+      background: #fff;
+    }
+
+    .cnvs-placeholder:nth-child(4n + 1) {
+      top: 100px;
+      left: 100px;
+    }
+
+    .cnvs-placeholder:nth-child(4n + 2) {
+      top: 400px;
+      left: 400px;
+    }
+
+    .cnvs-placeholder:nth-child(4n + 3) {
+      top: 200px;
+      left: 700px;
+    }
+
+    .cnvs-placeholder:nth-child(4n + 4) {
+      top: 300px;
+      left: 1000px;
+    }
+
+    .cnvs-placeholder:nth-child(5) { left: 1500px; }
+    .cnvs-placeholder:nth-child(6) { left: 2000px; }
+    .cnvs-placeholder:nth-child(7) { left: 2500px; }
+    .cnvs-placeholder:nth-child(8) { left: 3000px; }
+    .cnvs-placeholder:nth-child(9) { left: 3500px; }
+    .cnvs-placeholder:nth-child(10) { left: 4000px; }
+    .cnvs-placeholder:nth-child(11) { left: 4500px; }
+    .cnvs-placeholder:nth-child(12) { left: 5000px; }
+    .cnvs-placeholder:nth-child(13) { left: 5500px; }
+    .cnvs-placeholder:nth-child(14) { left: 6000px; }
+    .cnvs-placeholder:nth-child(15) { left: 6500px; }
+    .cnvs-placeholder:nth-child(16) { left: 7000px; }
+    .cnvs-placeholder:nth-child(17) { left: 7500px; }
+    .cnvs-placeholder:nth-child(18) { left: 8000px; }
+    .cnvs-placeholder:nth-child(19) { left: 8500px; }
+  </style>
+</body>
+</html>
